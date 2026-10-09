@@ -20,8 +20,10 @@ import com.skillbridge.skillbridge.service.UserService;
 @RequestMapping("/users")
 @CrossOrigin(origins = {
     "http://localhost:5173",
+    "https://skillbridge-frontend-xctq-dgamgkjs7-team-0b27.vercel.app",
     "https://skillbridge-frontend-xctq.vercel.app"
 })
+
 public class UserController {
 
     private final UserService userService;
