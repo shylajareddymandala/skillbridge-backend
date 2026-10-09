@@ -16,7 +16,11 @@ import com.skillbridge.skillbridge.service.SkillService;
 
 @RestController
 @RequestMapping("/skills")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://skillbridge-frontend-xctq-dgamgkjs7-team-0b27.vercel.app",
+    "https://skillbridge-frontend-xctq.vercel.app"
+})
 public class SkillController {
 
     private final SkillService skillService;
