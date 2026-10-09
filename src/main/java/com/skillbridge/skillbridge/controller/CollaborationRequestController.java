@@ -17,7 +17,10 @@ import com.skillbridge.skillbridge.service.CollaborationRequestService;
 
 @RestController
 @RequestMapping("/requests")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:5173",
+    "https://skillbridge-frontend-xctq.vercel.app"
+})
 public class CollaborationRequestController {
 
     private final CollaborationRequestService requestService;
